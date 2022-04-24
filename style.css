@@ -190,3 +190,51 @@ ul {
     font-weight: 600;
 }
 
+    /* --- lower content 'sign up' */
+
+.lower-content {
+    padding: 100px 20rem;
+    display: flex;
+    height: 300px;
+}
+
+.subcontent {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--button);
+    border-radius: 10px;
+    height: 33%;
+    width: 100%;
+    padding: 1.3em 6em;
+}
+
+.caption-call {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.caption-call,
+.text-call {
+    color: var(--header-logo);
+}
+
+.button1 {
+    background: var(--button);
+    padding: 12px 40px;
+    border: 2px solid white;
+    font: 18px;
+    border-radius: 8px;
+    color: var(--header-logo);
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
