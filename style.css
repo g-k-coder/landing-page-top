@@ -110,7 +110,8 @@ ul {
     background: var(--header-logo);
 }
 
-    /* --- upper content --- */
+
+    /* --- upper content 'information' --- */
 
 .upper-content {
     padding-top: 60px;
@@ -131,7 +132,6 @@ ul {
     display: flex;
     gap: 40px;
     margin-top: 60px;
-    flex-direction: row nowrap;
     justify-content: center;
     align-items: center;
 }
@@ -158,4 +158,35 @@ ul {
 }
 
 
+    /* --- middle content 'quote' --- */
+
+
+.middle-content {
+    background: var(--header-link-quote-bg);
+    padding: 150px 28em 100px 28em;
+    display: flex;
+    flex-flow: column nowrap;
+    height: auto;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.quote,
+.thor {
+    padding-right: 40px;
+}
+
+.quote {
+    color: var(--subtitle-quote);
+    font-size: 36px;
+    font-weight: 100;
+    width: 90%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.thor {
+    font-size: 24px;
+    font-weight: 600;
+}
 
