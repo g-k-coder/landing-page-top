@@ -14,7 +14,7 @@ body {
     flex-direction: column;
     justify-content: center;
     font-family: "roboto", sans-serif;
-    flex: 1;
+    flex-shrink: 0;
 }
 
 
@@ -35,14 +35,26 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 0 20rem;
+    align-items: center;
+}
+
+.head {
+    width: 1053px;
     gap: 120px;
-    flex: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: space-between;
 }
 
 .upp{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1053px;
+    flex-shrink: 0;
+    align-self: center;
 }
 
 .header-logo {
@@ -66,9 +78,9 @@ ul {
 }
 
 .header-content {
-    flex: auto;
+    flex-shrink: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;    
     margin-bottom: 150px;
     gap: 100px;
@@ -206,12 +218,20 @@ ul {
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 100px 25em 100px 25em;
+    flex-shrink: 0;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: space-between;
+    width: 853px;
+    flex-shrink: 0;
+}
 
 .quote {
     color: rgb(199, 199, 199);
@@ -227,9 +247,9 @@ ul {
     font-size: 28px;
     font-weight: 600;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    color: rgb(0, 0, 0);
     display: flex;
     align-self: flex-end;
-    color: rgb(0, 0, 0);
 }
 
     /* --- lower content 'sign up' */
@@ -245,19 +265,25 @@ ul {
 .subcontent {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;    
     background: var(--button);
     border-radius: 10px;
     height: 33%;
     width: 100%;
     padding: 1.3em 6em;
+    gap: 100px;
+    flex-basis: 1053px;
 }
 
 .caption-call {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .caption-call,
@@ -283,6 +309,10 @@ ul {
     color: black;
 }
 
+.btn-lower,
+.btn-upper {
+    flex-shrink: 0;
+} 
 
 /* --- footer --- */
 
