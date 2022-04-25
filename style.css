@@ -33,6 +33,7 @@ body {
     background: var(--top-bottom);
     padding: 0 20rem;
     gap: 120px;
+    flex: auto;
 }
 
 .upp{
@@ -47,6 +48,11 @@ body {
     font-weight: 900;
 }
 
+a {
+    text-decoration: none;
+    color: var(--header-link-quote-bg)
+}
+
 ul {
     list-style: none;
     display: flex;
@@ -56,6 +62,7 @@ ul {
 }
 
 .header-content {
+    flex: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;    
@@ -83,7 +90,7 @@ ul {
     color: var(--header-link-quote-bg);
 }
 
-.button {
+.btn-upper {
     background: var(--button);
     padding: 12px 40px;
     border: transparent;
@@ -108,10 +115,11 @@ ul {
 
 .body-content {
     background: var(--header-logo);
+    flex: auto;
 }
 
 
-    /* --- upper content 'information' --- */
+/* --- upper content 'information' --- */
 
 .upper-content {
     padding-top: 60px;
@@ -193,16 +201,18 @@ ul {
     /* --- lower content 'sign up' */
 
 .lower-content {
-    padding: 100px 20rem;
+    padding: 30px 20rem;
     display: flex;
     height: 300px;
+    align-items: center;
+    justify-content: center;
 }
 
 .subcontent {
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;    
     background: var(--button);
     border-radius: 10px;
     height: 33%;
@@ -221,7 +231,7 @@ ul {
     color: var(--header-logo);
 }
 
-.button1 {
+.btn-lower {
     background: var(--button);
     padding: 12px 40px;
     border: 2px solid white;
@@ -229,6 +239,11 @@ ul {
     border-radius: 8px;
     color: var(--header-logo);
     font-weight: 600;
+}
+
+.btn-lower:hover,
+.btn-upper:hover {
+    background: rgb(0, 174, 255);
 }
 
 
