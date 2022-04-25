@@ -30,7 +30,10 @@ body {
 }
 
 .header {
-    background: var(--top-bottom);
+    background: url("https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
     padding: 0 20rem;
     gap: 120px;
     flex: auto;
@@ -171,7 +174,10 @@ ul {
 
 
 .middle-content {
-    background: var(--header-link-quote-bg);
+    background: url("https://images.unsplash.com/photo-1502657877623-f66bf489d236?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
     padding: 100px 25em 100px 25em;
     display: flex;
     flex-flow: column nowrap;
@@ -181,7 +187,7 @@ ul {
 
 
 .quote {
-    color: var(--subtitle-quote);
+    color: rgb(199, 199, 199);
     font-size: 36px;
     font-weight: 100;
     width: 100%;
@@ -191,11 +197,12 @@ ul {
 }
 
 .author {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
     display: flex;
     align-self: flex-end;
+    color: rgb(0, 0, 0);
 }
 
     /* --- lower content 'sign up' */
@@ -242,7 +249,9 @@ ul {
 }
 
 .btn-lower:hover,
-.btn-upper:hover {
+.btn-upper:hover, 
+.btn-lower:active,
+.btn-upper:active {
     background: rgb(255, 208, 0);
     color: black;
 }
