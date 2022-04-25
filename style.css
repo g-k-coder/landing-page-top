@@ -44,13 +44,14 @@ body {
 
 .header-logo {
     color: var(--header-logo);
+    align-items: center;
     font-size: 24px;
     font-weight: 900;
 }
 
 a {
     text-decoration: none;
-    color: var(--header-link-quote-bg)
+    color: var(--header-logo);   
 }
 
 ul {
@@ -171,31 +172,30 @@ ul {
 
 .middle-content {
     background: var(--header-link-quote-bg);
-    padding: 150px 28em 100px 28em;
+    padding: 100px 25em 100px 25em;
     display: flex;
     flex-flow: column nowrap;
-    height: auto;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: space-between;
 }
 
-.quote,
-.thor {
-    padding-right: 40px;
-}
 
 .quote {
     color: var(--subtitle-quote);
     font-size: 36px;
     font-weight: 100;
-    width: 90%;
+    width: 100%;
     height: auto;
     flex-shrink: 0;
+    font-family: monospace;
 }
 
-.thor {
+.author {
     font-size: 24px;
     font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    display: flex;
+    align-self: flex-end;
 }
 
     /* --- lower content 'sign up' */
@@ -243,7 +243,8 @@ ul {
 
 .btn-lower:hover,
 .btn-upper:hover {
-    background: rgb(0, 174, 255);
+    background: rgb(255, 208, 0);
+    color: black;
 }
 
 
