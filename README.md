@@ -2,4 +2,8 @@
 
 ## `The Odin Project`
 
-### Foundations CSS Flexbox
+### Foundations 
+
+#### HTML
+
+#### CSS *(Flexbox)*
